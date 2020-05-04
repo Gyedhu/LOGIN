@@ -13,9 +13,8 @@ body {
 
 /* app - All content container */
 .app {
-    background-color: #446e44;
-    height: 100vh;
-    padding: 80px 150px;
+    background-color: #446e44; 
+    padding: 50px 150px;
     width: 100%;
 }
 
@@ -24,7 +23,7 @@ body {
 .container {
     box-shadow: 0 0 10px black;
     display: flex;
-    height: 100%;
+    height: 90vh;
     width: 100%;
 }
 
