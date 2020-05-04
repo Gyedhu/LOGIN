@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+/* app - All content container */
+.app {
+    background-color: #446e44;
+    height: 100vh;
+    padding: 80px 150px;
+    width: 100%;
+}
+
+
+/* Container  */
+.container {
+    box-shadow: 0 0 10px black;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+/* Left Box */
+.left-box {
+    align-items: center;
+    background: url("https://images.pexels.com/photos/65614/coast-beach-rock-stones-65614.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat center center ;
+    background-blend-mode: multiply;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: gray;
+    color: white;
+    display: flex;
+    font-family: 'Heebo', sans-serif;
+    font-weight: bold;
+    flex-direction: column;
+    justify-content: center;
+    text-shadow: 0 5px 10px black;
+    width: 35%; 
+}
+
+.left-box > .header { 
+    font-size: 1.8em;
+}
+
+.left-box > .sub { 
+    font-size: 0.8em;
+    font-weight: bold;
+    margin: 0.5em 0 2em 0;
+}
+
+.left-box > button{
+    background-color: #38b138;
+    border: 0;
+    border-radius: 3px;
+    box-shadow: 0 1px 10px black;
+    color: inherit;
+    font-family: inherit;
+    font-size: 1em;
+    outline: 0;
+    padding: 10px 20px;
+    text-shadow: inherit;
+}
+
+
+/* RIght Box */
+.right-box {
+    background-color: white; 
+    width: 75%;
+}
+
+.top-part { 
+    align-items: center;
+    color: #333;
+    display: flex;
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold; 
+    height: 15%;
+    justify-content: flex-end;
+    padding: 0 20px;
+}
+
+.form-part {
+    align-items: center;   
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    justify-content: center;
+}
+
+.form-part >.header {
+    color: yellowgreen;
+    font-size: 2em;
+    font-weight: bold; 
+}
+
+.form-part > form { 
+    color: #aaa;
+    display: flex;
+    font-weight: bold;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px 0;
+    width: 60%;
+}
+
+#email,
+#pass {
+    border-color: #aaa;
+    border-style: solid;
+    border-width: 0 0 2px 0;
+    font-size: 1em;
+    margin-bottom: 15px;
+    outline: 0;
+    padding: 5px;
+}
+
+
+#forget-password {
+    color: #38b138;
+}
+
+form > .sub {
+    color: #777; 
+    font-size: 0.8em;
+}
+
+
+form > .sub > span {
+    float: right;
+}
+
+button {
+    background-color: #38b138;
+    border: 0;
+    border-radius: 3px;
+    color: white;
+    font-family: inherit;
+    font-weight: bold;
+    margin: 20px 0;
+    padding: 10px 40px;
+    width: fit-content;
+}
+
+.footer {  
+    color: #aaa;
+    display: flex;
+    font-size: 0.8em;
+    height: 15%;
+    font-weight: bold; 
+}
+
+.footer > div {
+    align-self: center; 
+    padding: 0 30px;
+    width: 50%;
+}
+
+.footer > .left-part {
+    float: left;
+}
+
+.footer .right-part {
+    text-align: right;
+}
