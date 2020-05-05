@@ -148,6 +148,7 @@ button {
     font-weight: bold;
     margin: 20px 0;
     padding: 10px 40px;
+    transition: transform 0.5s;
     width: fit-content;
 }
 
@@ -171,4 +172,16 @@ button {
 
 .footer .right-part {
     text-align: right;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.hover-underline:hover {
+    text-decoration: underline;
+}
+
+.btn-hover-effect:hover { 
+    transform: translateY(-2px);
 }
