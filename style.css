@@ -101,6 +101,7 @@ body {
     color: yellowgreen;
     font-size: 2em;
     font-weight: bold; 
+    text-align: center;
 }
 
 .form-part > form { 
@@ -134,8 +135,11 @@ form > .sub {
     font-size: 0.8em;
 }
 
+form > .sub > span:nth-child(1) {
+    float: left;
+}
 
-form > .sub > span {
+form > .sub > span:nth-child(2) {
     float: right;
 }
 
@@ -148,7 +152,7 @@ button {
     font-weight: bold;
     margin: 20px 0;
     padding: 10px 40px;
-    transition: transform 0.3s;
+    transition: transform 0.5s;
     width: fit-content;
 }
 
@@ -184,4 +188,53 @@ button {
 
 .btn-hover-effect:hover { 
     transform: translateY(-2px);
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .container {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .left-box, 
+    .right-box {
+        width: 100%;
+    }
+
+    .left-box {
+        height: 50vh;
+    }
+
+    .left-box > .header {
+        font-size: calc(10px + 5vmin);
+    } 
+
+}
+
+@media only screen and (max-width: 786px) {
+
+    .app {
+        padding: 0px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .right-box > .top-part {
+        padding: 20px;
+    }
+
+    .sub { 
+        align-items: center;
+        display: flex;
+        flex-direction: column; 
+    }
+
+    form > .sub > * {
+        padding: 10px;
+    }
+
+
 }
